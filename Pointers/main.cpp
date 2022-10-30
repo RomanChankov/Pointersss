@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 
@@ -23,9 +23,9 @@ void main()
 	    {
 	        int n;
 	        cout << "\nMenu:" << endl;
-	        cout << "1 - Remove even values of an array" << endl;//Óäàëåíèå ÷åòíûõ çíà÷åíèé ìàññèâà
-	        cout << "2 - Remove odd values of an array" << endl;//Óäàëåíèå íå÷åòíûõ çíà÷åíèé ìàññèâà
-	        cout << "3 - Show the current array" << endl;//Ïîêàçàòü òåêóùèé ìàññèâ
+	        cout << "1 - Remove even values of an array" << endl;//Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ñ‡ÐµÑ‚Ð½Ñ‹Ñ… Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ð¹ Ð¼Ð°ÑÑÐ¸Ð²Ð°
+	        cout << "2 - Remove odd values of an array" << endl;//Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð½ÐµÑ‡ÐµÑ‚Ð½Ñ‹Ñ… Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ð¹ Ð¼Ð°ÑÑÐ¸Ð²Ð°
+	        cout << "3 - Show the current array" << endl;//ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð¼Ð°ÑÑÐ¸Ð²
 	        cout << "4 - Exit" << endl;
 	        cin >> n;
 	        cout<< endl;
@@ -73,7 +73,7 @@ void main()
 	        } break;
 	        default:
 	        {
-	            cout << "\nError. Please enter the correct number" << endl; //Ââåäèòå ïðàâèëüíûé íîìåð.
+	            cout << "\nError. Please enter the correct number" << endl; //Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€.
 	        }
 	        }
 	    }
