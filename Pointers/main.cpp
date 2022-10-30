@@ -1,30 +1,80 @@
 #include<iostream>
 using namespace std;
 
-//#define POINTERS_DASICS
 
 void main()
 {
 	setlocale(0, "");
 
-#ifdef POINTERS_DASICS
-	//cout << "Hello Poiters" << endl;
-	int a = 2;
-	int* pa = &a;
-	cout << a << endl;//Вывод значения переменной 'a' на экран
-	cout << &a << endl;//взятие адреса переменной а прямо при выводе
-	cout << pa << endl;//Вывод на экран адреса переменной а хранящегося в указателе ра
-	cout <<* pa << endl;
-///////////////////////////////////////////////////
-#endif
+		int m;
+		cout << "Enter the size of the array: " << endl;
+		cin >> m;
+		int* a = new int[m];
 
-	const int n = 5;
-	int arr[n] = { 3,5,8,13,21 };
-	cout << arr << endl;
-	cout << *arr << endl << endl;;
-	for (int i = 0; i < n; i++)
-	{
-		cout << *(arr +i)<< "\t";
+		for (int i = 0; i < m; i++)
+		{
+			a[i]=rand()%100;
+			cout << a[i] << "	";
+		}
+		
+		cout << endl;
+	
+	    while (true)
+	    {
+	        int n;
+	        cout << "\nMenu:" << endl;
+	        cout << "1 - Remove even values of an array" << endl;//Удаление четных значений массива
+	        cout << "2 - Remove odd values of an array" << endl;//Удаление нечетных значений массива
+	        cout << "3 - Show the current array" << endl;//Показать текущий массив
+	        cout << "4 - Exit" << endl;
+	        cin >> n;
+	        cout<< endl;
+	        switch (n)
+	        {
+	        case 1:
+	           
+	        {
+	            for (int i = 0; i < m; i++)
+	            {
+	                if (a[i] % 2 == 0)
+	                {
+	                    cout << a[i] << "" << endl;
+	                }
+	            }
+	        
+	        } 
+	        break;
+	        
+	
+	        case 2:
+	        {
+	            for (int i = 0; i < m; i++)
+	            {
+	                if (!(a[i] % 2 == 0))
+	                {
+	                    cout << a[i] << " " << endl;
+	                }
+	            }
+	        } break;
+	        case 3:
+	        {
+	            cout << "Array: ";
+	            for (int i = 0; i < m; i++)
+	            {
+	                cout << a[i] << " ";
+	            }
+	        } break;
+	
+	        case 4:
+	        {
+	            delete[] a;
+				exit(0);
+	            
+	        } break;
+	        default:
+	        {
+	            cout << "\nError. Please enter the correct number" << endl; //Введите правильный номер.
+	        }
+	        }
+	    }
 	}
-	cout << endl;
-}
